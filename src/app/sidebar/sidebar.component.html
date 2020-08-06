@@ -1,0 +1,72 @@
+<style>
+  @font-face {
+    font-family: "Northern";
+    src: url("../../assets/fonts/NorthernTerritories.ttf") format("truetype");
+  }
+
+  .titleceneae{
+    font-family:Northern;
+    font-size: 30px
+  }
+  .font-natacad{
+    font-family:Northern;
+
+  }
+  .card .card-footer {
+    margin-top: 1em;
+    border: 0;
+  }
+
+
+
+  .logos{
+    background:rgb(168, 47, 6);
+    color: #ffffff;
+
+
+  }
+
+  .slider-label{
+    color:rgb(51, 51, 51);
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+
+
+  li.active > a> p {
+    color: #ffffff;
+
+
+  }
+
+  li.active > a {
+    color: #5a5a5a;
+    opacity: 1;
+    background:rgb(168, 47, 6);
+    border-radius: 5px;
+
+  }
+
+</style>
+<div class="sidebar-wrapper">
+  <div class="logo logos">
+    <a href="" class="simple-text logo-mini">
+      <div class="logo-image-small">
+        <img width="95px" height="25px" src="assets/img/sunlogos.png">
+      </div>
+    </a>
+    <a style="color:#ffffff; font-size:15px; text-align:center; line-height:1em;"
+       href="http://www.creative-tim.com" class="simple-text logo-normal font-natacad">
+      CENTRO EDUCATIVO <br>NATANAEL
+    </a>
+
+  </div>
+    <ul class="nav">
+        <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="nc-icon {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

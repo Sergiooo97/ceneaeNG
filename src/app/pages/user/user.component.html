@@ -1,0 +1,221 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card card-user">
+      <div class="image">
+        <img src="assets/img/ntcd.jpg" alt="...">
+      </div>
+      <div class="card-body">
+        <div class="author">
+          <a href="#">
+            <img class="avatar border-gray" src="assets/img/yo.jpg" alt="...">
+            <h5 class="title">Sergio Eb Gallegos</h5>
+          </a>
+          <p class="description">
+            @16070021
+          </p>
+        </div>
+        <p class="description text-center">
+          "De grande quiero ser
+          <br> Ingeniero en sistemas"
+        </p>
+      </div>
+      <div class="card-footer">
+        <hr>
+        <div class="button-container">
+          <div class="row">
+            <div class="col-sm-3 mr-auto">
+              <h5>100$
+                <br>
+                <small style="font-size: 14px;">dolares</small>
+              </h5>
+            </div>
+            <div  class="col-sm-9 mr-auto" >
+              <button style="font-size: 23px; padding: 10px;" type="button" class="btn btn-success" data-toggle="modal"
+                      data-target="#depositoRetiro" data-whatever="deposito" >
+                +$
+              </button>
+              <button id="retiro" style="font-size: 23px; padding: 10px;" type="button" class="btn btn-danger" data-toggle="modal"
+                      data-target="#depositoRetiro" data-whatever="retiro">
+                -$
+              </button>
+              <a data-role="button" id="detalles" href="#" style="font-size: 23px; padding: 10px;" class="btn btn-primary" hidden > <i style="padding: 0px;" class="nc-icon nc-alert-circle-i"></i></a>
+              <button id="boton" class="enlace btn btn-primary" role="link"  style="font-size: 23px; padding: 10px;"><i style="padding: 0px;" class="nc-icon nc-alert-circle-i"></i></button>
+
+              <script>
+
+                if(document.getElementById('ndolarTransacciones-d').value <=0){
+                  document.getElementById('boton').disabled=true;
+                  document.getElementById('retiro').disabled=true;
+
+                }
+              </script>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    <div class="card card-user">
+      <div class="card-header">
+        <h5 class="card-title">información de alumno</h5>
+
+      </div>
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="form-group">
+              <label>Matricula (disabled)</label>
+              <input name="matricula" type="text" class="form-control" disabled="" placeholder="Company" value="01EXGS971124H1A1920">
+            </div>
+          </div>
+          <div class="col-md-3 px-1">
+            <div class="form-group">
+              <label>Usuario</label>
+              <input disabled="" id="nombres" type="text" class="form-control" placeholder="Username" value="sergiooo97">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">CURP</label>
+              <input disabled="" name="curp" type="email" class="form-control" placeholder="EXGS971124HYNBLR01">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="form-group">
+              <label>Nombres</label>
+              <input disabled="" name="nombres" type="text" class="form-control"  placeholder="Company" value="Sergio">
+            </div>
+          </div>
+          <div class="col-md-3 px-1">
+            <div class="form-group">
+              <label>Apellido paterno</label>
+              <input disabled="" name="apellido_paterno" type="text" class="form-control" placeholder="apellido1" value="EB">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Apellido paterno</label>
+              <input disabled="" name="apellido_materno" type="text" class="form-control" placeholder="Apellido paterno" value="Gallegos">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Fecha de nacimiento</label>
+              <input disabled="" name="fecha_de_nacimiento" type="date" class="form-control" placeholder="Fecha de nacimiento" value="97-11-24">
+            </div>
+          </div>
+          <div class="col-md-3 px-1">
+            <div class="form-group">
+              <label>Municipio</label>
+              <input disabled="" name="municipio" type="text" class="form-control" placeholder="Municipio" value="Cacalchén, Yucatán.">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Dirección</label>
+              <input disabled="" name="direccion" type="text" class="form-control" placeholder="Dirección" value="Calle 16x17y19">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Nombres de tutor</label>
+
+              <input disabled="" name="nombres_tutor" type="text" class="form-control" placeholder="Nombres de tutor" value="Rafael">
+            </div>
+          </div>
+          <div class="col-md-3 px-1">
+            <div class="form-group">
+              <label>Apellido paterno de tutor</label>
+              <input disabled="" name="apellido_paterno_tutor" type="text" class="form-control" placeholder="Apellido paterno de tutor" value="Gallegos">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Apellido materno de tutor</label>
+              <input disabled=""  name="apellido_materno_tutor" type="text" class="form-control" placeholder="Apellido paterno de tutor" value="Eb">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5 pr-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Teléfono del tutor</label>
+              <input disabled="" name="telefono_tutor" type="number" class="form-control" placeholder="Teléfono del tutor" value="9911074558">
+            </div>
+          </div>
+          <div class="col-md-3 px-1">
+            <div class="form-group">
+              <label>E-mail de tutor</label>
+              <input disabled="" type="email" class="form-control" placeholder="correo del tutor" value="sergio@its.edu">
+            </div>
+          </div>
+          <div class="col-md-4 pl-1">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Dirección del tutor</label>
+              <input disabled="" name="direccion_tutor" type="text" class="form-control" placeholder="Dirección de tutor" value="Calle 16x17y19">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="update ml-auto mr-auto">
+            <a href=""  class="btn btn-primary btn-round">Actualizar datos</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+    <div class="col-md-8">
+      <div class="card card-user">
+        <div class="card-header">
+          <h5 class="card-title">información de alumno</h5>
+        </div>
+        <div class="card-body">
+          <highcharts-chart [Highcharts]="highcharts" [options]="chartOptions" style="width: 100%; height: 100%; display: block;"></highcharts-chart>
+        </div>
+      </div>
+    </div>
+
+  <div class="col-md-4">
+    <div  class="card card-user">
+      <div class="card-header btn-volver-container">
+        <h5 class="card-title">Calificación de Sergio </h5>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table id="example" class="table table-striped table-hover " style="width:100%">
+            <thead class=" text-info">
+            <th>B1</th>
+            <th>B2</th>
+            <th>B3</th>
+            <th>B4</th>
+            <th>Final</th>
+            </thead>
+            <tbody>
+            <tr>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card-footer">
+        <p>Promedio final: 10</p>
+      </div>
+    </div>
+
+  </div>
