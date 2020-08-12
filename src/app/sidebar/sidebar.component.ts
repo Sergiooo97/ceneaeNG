@@ -9,14 +9,13 @@ export interface RouteInfo {
 }
 
 export const ROUTES: RouteInfo[] = [
-    { path: '/Dashboard',     title: 'Inicio',            icon:'nc-bank',       class: '' },
-    { path: '/Alumnos',       title: 'Alumnos',           icon:'nc-satisfied',    class: '' },
-    { path: '/user',          title: 'Info',              icon:'nc-single-02',  class: '' },
-    { path: '/periodoss',     title: 'Maps',              icon:'nc-calendar-60',      class: '' },
-    { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',    class: '' },
-    { path: '/table',         title: 'Table List',        icon:'nc-tile-56',    class: '' },
-    { path: '/typography',    title: 'Typography',        icon:'nc-caps-small', class: '' },
-    { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',  class: 'active-pro' },
+    { path: '/Dashboard',     title: 'Inicio',            icon:'nc-bank',           class: '' },
+    { path: '/alumnos',       title: 'Alumnos',           icon:'nc-satisfied',      class: '' },
+    { path: '/periodo',       title: 'Periodo',           icon:'nc-calendar-60',    class: '' },
+    { path: '/notifications', title: 'Notifications',     icon:'nc-bell-55',        class: '' },
+    { path: '/table',         title: 'Table List',        icon:'nc-tile-56',        class: '' },
+    { path: '/typography',    title: 'Typography',        icon:'nc-caps-small',     class: '' },
+    { path: '/upgrade',       title: 'Upgrade to PRO',    icon:'nc-spaceship',      class: 'active-pro' },
 ];
 
 @Component({

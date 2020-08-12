@@ -1,0 +1,55 @@
+<div class="card card-user">
+    <div class="image">
+      <img src="assets/img/ntcd.jpg" alt="...">
+    </div>
+    <div class="card-body">
+      <div class="author">
+        <a href="#">
+          <img class="avatar border-gray" src="assets/img/yo.jpg" alt="...">
+          <h5 class="title" > {{alumnos.nombres}}</h5>
+        </a>
+        <p class="description">
+          @ {{alumnos.matricula}}
+        </p>
+      </div>
+      <p class="description text-center">
+        "De grande quiero ser
+        <br> Ingeniero en sistemas"
+      </p>
+    </div>
+    <div class="card-footer">
+      <hr>
+      <div class="button-container">
+        <div class="row">
+          <div class="col-sm-3 mr-auto">
+            <h5>{{ alumnos.ndolar_cantidad}}$
+              <br>
+              <small style="font-size: 14px;">dolares</small>
+            </h5>
+          </div>
+          <div  class="col-sm-9 mr-auto" >
+            <button style="font-size: 23px; padding: 10px;" type="button" class="btn btn-success" data-toggle="modal"
+                    data-target="#depositoRetiro" data-whatever="deposito" >
+              +$
+            </button>
+            <button id="retiro" style="font-size: 23px; padding: 10px;" type="button" class="btn btn-danger" data-toggle="modal"
+                    data-target="#depositoRetiro" data-whatever="retiro">
+              -$
+            </button>
+            <a data-role="button" id="detalles" href="#" style="font-size: 23px; padding: 10px;" class="btn btn-primary" hidden > <i style="padding: 0px;" class="nc-icon nc-alert-circle-i"></i></a>
+            <button id="boton" class="enlace btn btn-primary" role="link"  style="font-size: 23px; padding: 10px;"><i style="padding: 0px;" class="nc-icon nc-alert-circle-i"></i></button>
+
+            <script>
+
+              if(document.getElementById('ndolarTransacciones-d').value <=0){
+                document.getElementById('boton').disabled=true;
+                document.getElementById('retiro').disabled=true;
+
+              }
+            </script>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -15,10 +15,15 @@ export class FixedPluginComponent implements OnInit{
 
   changeSidebarColor(color){
     var sidebar = <HTMLElement>document.querySelector('.sidebar');
+    var body = <HTMLElement>document.querySelector('.main-panel');
+    var card = <HTMLElement>document.querySelector('.card');
 
     this.sidebarColor = color;
     if(sidebar != undefined){
         sidebar.setAttribute('data-color',color);
+        body.classList.add('dark');
+        card.classList.add('dark');
+
     }
   }
   changeSidebarActiveColor(color){

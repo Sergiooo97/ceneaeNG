@@ -8,15 +8,16 @@ import { FooterModule } from './shared/footer/footer.module';
 import { NavbarModule} from './shared/navbar/navbar.module';
 import { FixedPluginModule} from './shared/fixedplugin/fixedplugin.module';
 import { ChartModule } from 'angular-highcharts';
-
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routing';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
-import { AlumnosComponent } from './pages/alumnos/alumnos.component';
+import { AlumnosComponent } from './pages/Alumno/alumnos/alumnos.component';
 import { InfoComponent } from './pages/info/info.component';
 import { HighchartsComponent } from './pages/highcharts/highcharts.component';
 import { ChartComponent } from './pages/chart/chart.component';
+import {HttpClientModule} from '@angular/common/http';
+import { AlumnoModule } from './pages/Alumno/alumno.module';
 
 
 @NgModule({
@@ -27,6 +28,8 @@ import { ChartComponent } from './pages/chart/chart.component';
     InfoComponent,
     HighchartsComponent,
     ChartComponent,
+
+
   ],
   imports: [
     BrowserAnimationsModule,
@@ -39,7 +42,9 @@ import { ChartComponent } from './pages/chart/chart.component';
     FooterModule,
     FixedPluginModule,
     HighchartsChartModule,
-    ChartModule
+    ChartModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

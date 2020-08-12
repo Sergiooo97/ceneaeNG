@@ -1,0 +1,42 @@
+<div class="card card-user">
+    <div class="image">
+      <img src="assets/img/ntcd.jpg" alt="...">
+    </div>
+    <div class="card-body">
+      <div class="author">
+        <a href="#">
+          <img class="avatar border-gray" src="assets/img/yo.jpg" alt="...">
+          <h5 class="title" > Sergio </h5>
+        </a>
+        <p class="description">
+          @16070021
+        </p>
+      </div>
+      <p class="description text-center">
+        "De grande quiero ser
+        <br> Ingeniero en sistemas"
+      </p>
+    </div>
+    <div class="card-footer">
+      <hr>
+      <div class="button-container">
+        <div class="row">
+          <div class="col-sm-3 mr-auto">
+            <h5>100$
+              <br>
+              <small style="font-size: 14px;">dolares</small>
+            </h5>
+          </div>
+          <div  class="col-sm-9 mr-auto" >
+            <a [routerLink]="['/alumnos/info/', '1', 'd']" style="font-size: 23px; padding: 10px;" class="btn btn-success">
+              +$
+          </a>
+          <a [routerLink]="['/alumnos/info/', '1','r']" style="font-size: 23px; padding: 10px;" class="btn btn-danger">
+                -$
+            </a>
+            <a [routerLink]="['/alumnos/nd/historial']"  style="font-size: 23px; padding: 10px;" class="btn btn-primary"  > <i style="padding: 0px;" class="nc-icon nc-alert-circle-i"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
